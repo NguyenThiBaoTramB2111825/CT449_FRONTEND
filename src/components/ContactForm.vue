@@ -85,8 +85,7 @@ export default {
     });
 
     return {
-      // Tạo biến cục bộ contactLocal để tránh chỉnh sửa props trực tiếp
-      contactLocal: this.contact,
+      contactLocal: this.contact || {},
       contactFormSchema,
     };
   },
